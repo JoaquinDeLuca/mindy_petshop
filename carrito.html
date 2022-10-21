@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylenavbar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/styleFooter.css">
+    <link rel="shortcut icon" href="./assets/img/mindyfavicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylenavbar.css">
+    <title>Carrito</title>
+</head>
+<body class="d-flex flex-column" style="min-height: 100vh ;">
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container d-lg-grid" style=" grid-template-columns: 200px 1fr 200px">
+            <a href="./index.html" class="navbar-brand me-5"><img class="logo" src="./assets/img/mindylogo2.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav m-2">
+                <li class="nav-item">
+                    <a class="nav-link mx-3 border-bottom border-light borderLiNav" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link mx-3 border-bottom border-light borderLiNav" href="./remedios.html">Remedios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 border-bottom border-light borderLiNav" href="./juguetes.html">Juguetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 border-bottom borderLiNav" href="./contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 border-light borderLiNav activeCSS" href="./carrito.html">Carrito</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <header>
+    </header>
+    <main style="background-color: white;flex-grow: 1;" >
+        <div class="container">
+            <div id="contenedorCarrito" class="d-flex flex-wrap justify-content-evenly shadow-lg my-5 px-4" style="background-color: #F9EBC8;min-height: 40vh;">
+                <div class="container" >
+                    <h1 class="text-center m-0 py-4" style="border-bottom: 1px solid rgba(0,0,0,0.091)">TUS PRODUCTOS</h1>
+                </div>
+                <div id="misProductos" class="col-lg-6 d-flex flex-column justify-content-center py-4 gap-2"></div>
+                <div id="miCarrito" class="col-lg-4 my-4">
+                    <h2 class="border-bottom text-center mt-3 mb-4">CARRITO DE COMPRAS</h2>
+                    <p class="fw-bold border-bottom text-center fs-4" id="parrafoPrecioTotal">Total: $<span id="PrecioTotalEnCarrito"> 0</span></p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-group px-3 btn btn-outline-dark m-2 m-lg-1" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                        <button class="btn-group px-3 btn btn-primary m-2 m-lg-1" onclick="finalizarCompra()">Finalizar Compra</button>
+                    </div>
+                    <div id="misAlertas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid justify-content-between row">
+            <div class="row p-3 pb-2 text-secondary d-flex justify-content-evenly col-12 col-md-12 col-lg-11" style="    margin-left: calc(-.0 * var(--bs-gutter-x));">
+                <div class="col-xs-12 col-md-6 col-lg-3 ">
+                    <p class="h5 mb-3 text-center  ">Nuestras Redes</p>
+                    <div class="mb-3 d-flex justify-content-evenly">
+
+                        <a href="https://z-p15.www.instagram.com/accounts/login/?next=/p/CK8SOUgBxgo/&hl=es-la" target="_blank"><img class="redSocial" src="./assets/imgFooter/instagram.png" alt="instagram"></a>
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="redSocial" src="./assets/imgFooter/whatsapp.png" alt="whatsapp"></a>
+                        <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="redSocial" src="./assets/imgFooter/facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 nuestrosLocales">
+                    <p class="h5 ">Nuestros Locales</p>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.google.com/maps/place/R%C3%ADo+de+Janeiro+300,+C1405CCB+CABA/@-34.611797,-58.43041,16z/data=!4m5!3m4!1s0x95bcca429815227f:0x5d302e497c2cda87!8m2!3d-34.6117966!4d-58.4304098?ll=-34.611797,-58.43041&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=R%C3%ADo+de+Janeiro+300+C1405CCB+CABA&shorturl=1">Sucursal CABA</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none " id="direccion" target="_blank" href="https://goo.gl/maps/rtWQ3V9qdSjKryc88">Sucursal Córdoba</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.google.com/maps/place/PET+SHOP+AVELLANEDA,+Bv.+Avellaneda+2797,+S2000+Rosario,+Santa+Fe/@-32.9592099,-60.6626968,14z/data=!4m8!1m2!2m1!1spet+shop!3m4!1s0x95b7ad618dc7d645:0x8d7b99e07ddc9385!8m2!3d-32.9624272!4d-60.6848253">Sucursal Rosario</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 legales">
+                    <p class="h5 mb-1 ">Legales</p>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/porque-es-importante-leer-los-terminos-y-condiciones-de-una-pagina-en-internet-o-aplicacion">Terminos y condiciones</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none text-left" id="direccion" target="_blank" href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad">Política de Privacidad</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor">Defensa del Consumidor</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 mindhubFooter">
+                    <p class="h5 mb-3 ">MindHub Cohorte-32</p>
+                    <p class="text-white">Grupo 4</p>
+                </div>
+                <div class="col-xs-12  mb-0 pt-3">
+                    <p class="text-white text-center">Devs: Alessandro.L - Chaban.D - Condori.A - De Luca.J - Garay.S - Giusti.I - Teruel.J </p>
+                </div>
+            
+            </div>
+            <div class="col-12  col-lg-1 p-2 d-flex justify-content-center "><a href="#"><img  class="flechaInicio" src="./assets/imgFooter/flechaSbg1.png" alt="flecha"></a></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>

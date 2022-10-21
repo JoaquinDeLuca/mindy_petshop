@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{  --main-color: #F9EBC8;
+    --second-color: #FEFBE7; 
+    --third-color: #DAE5D0; 
+    --fourth-color: #A0BCC2; 
+    --fifth-color: rgb(255, 107, 62);
+}
+
+
+.color{
+    background-color: var(--main-color);
+}
+
+main h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,105 @@
+:root{  --main-color: #F9EBC8;
+    --second-color: #FEFBE7; 
+    --third-color: #DAE5D0; 
+    --fourth-color: #cadde0; 
+}
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+main{
+background-color: var(--main-color);
+}
+
+main h1{
+    font-size: 3rem;
+}
+
+.lineaBottom{
+border-bottom: 1px solid rgba(0, 0, 0, 0.095);
+}
+
+.lineaTop{
+    border-top: 2px solid rgba(0, 0, 0, 0.095);
+}
+
+.hover{
+    border-bottom: 2px solid transparent !important;
+}
+
+
+.hover:hover{
+    border-bottom: 2px solid black !important;
+}
+
+#carouselExampleControls img{
+    max-width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.card-text{
+color: gray;
+font-size: .8rem;
+}
+
+.card{
+    /* background-color: black; */
+border: 0;
+}
+
+.mapa{
+font-weight: bold;
+text-decoration: underline;
+}
+
+main h2{
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+
+.bold{
+font-weight: bold;
+text-decoration: underline;
+}
+
+main h5{
+font-size: 1.3rem;
+}
+
+.about{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.font{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 767px) {
+    #carouselExampleControls img{
+        object-fit: cover;
+        height: 30vh;
+    }
+    .formSelect{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    #carouselExampleControls img{
+        object-fit: contain;
+        height: 30vh;
+        width: 100%;
+    }
+    main h1{
+            font-size: 2.5rem;
+        }
+}

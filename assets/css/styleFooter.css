@@ -1,0 +1,35 @@
+:root{  --main-color: #F9EBC8;
+    --second-color: #FEFBE7; 
+    --third-color: #DAE5D0; 
+    --fourth-color: #A0BCC2; 
+}
+footer{
+    min-height: 10vh;
+    background-color: var(--fourth-color);
+}
+
+.redSocial{
+    height: 30px;
+}
+.flechaInicio{
+    height: 35px;
+}
+
+.nuestrosLocales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.legales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mindhubFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    --bs-gutter-x: 0.0rem;
+}

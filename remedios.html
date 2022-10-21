@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/styleIndexJT.css">
+    <link rel="stylesheet" href="./assets/css/stylenavbar.css">
+    <link rel="stylesheet" href="/assets/css/styleFooter.css">
+    <link rel="shortcut icon" href="./assets/img/mindyfavicon.png" type="image/x-icon">
+    <title>Remedios</title>
+</head>
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container d-lg-grid" style=" grid-template-columns: 200px 1fr 200px">
+                <a href="./index.html" class="navbar-brand me-5"><img class="logo" src="./assets/img/mindylogo2.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav m-2">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 border-bottom border-light borderLiNav" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 border-bottom border-light borderLiNav activeCSS" href="#">Remedios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 border-bottom border-light borderLiNav" href="./juguetes.html">Juguetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 border-bottom borderLiNav" href="./contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 border-light borderLiNav" href="./carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleControls" class="container carousel slide mt-4 p-0 shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/imgRemedios/remedios1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imgRemedios/remedios2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imgRemedios/remedios3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </header>
+    <main class="color container my-4 py-4 shadow-lg">
+            <div class="pb-4" style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+                <h1 class="text-center">REMEDIOS</h1>
+                <h5 class="text-center">La salud de tus mascotas, la felicidad de tu familia</h5>
+            </div>
+            <div id="contenedorFiltros" class="my-4">
+                <!-- filtros tipo checkbox -->
+            </div>
+            <div class="container d-flex flex-wrap gap-4 justify-content-center pb-3 pt-3" id="productsContainer">
+                <!-- mostrar productos de juguetes en cards -->
+                <!-- destacar loss productos con menos de 3 unidades arriba-->
+                <!-- agregar boton de añadir y disminuir unidad -->
+                <!-- agregar boton de añadir al carrito -->
+                <!-- agregar boton de realizar compra -->
+            </div>
+    </main>
+    <footer>
+        <div class="container-fluid justify-content-between row">
+            <div class="row p-3 pb-2 text-secondary d-flex justify-content-evenly col-12 col-md-12 col-lg-11" style="    margin-left: calc(-.0 * var(--bs-gutter-x));">
+                <div class="col-xs-12 col-md-6 col-lg-3 ">
+                    <p class="h5 mb-3 text-center  ">Nuestras Redes</p>
+                    <div class="mb-3 d-flex justify-content-evenly">
+
+                        <a href="https://z-p15.www.instagram.com/accounts/login/?next=/p/CK8SOUgBxgo/&hl=es-la" target="_blank"><img class="redSocial" src="./assets/imgFooter/instagram.png" alt="instagram"></a>
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="redSocial" src="./assets/imgFooter/whatsapp.png" alt="whatsapp"></a>
+                        <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="redSocial" src="./assets/imgFooter/facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 nuestrosLocales">
+                    <p class="h5 ">Nuestros Locales</p>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.google.com/maps/place/R%C3%ADo+de+Janeiro+300,+C1405CCB+CABA/@-34.611797,-58.43041,16z/data=!4m5!3m4!1s0x95bcca429815227f:0x5d302e497c2cda87!8m2!3d-34.6117966!4d-58.4304098?ll=-34.611797,-58.43041&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=R%C3%ADo+de+Janeiro+300+C1405CCB+CABA&shorturl=1">Sucursal CABA</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none " id="direccion" target="_blank" href="https://goo.gl/maps/rtWQ3V9qdSjKryc88">Sucursal Córdoba</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.google.com/maps/place/PET+SHOP+AVELLANEDA,+Bv.+Avellaneda+2797,+S2000+Rosario,+Santa+Fe/@-32.9592099,-60.6626968,14z/data=!4m8!1m2!2m1!1spet+shop!3m4!1s0x95b7ad618dc7d645:0x8d7b99e07ddc9385!8m2!3d-32.9624272!4d-60.6848253">Sucursal Rosario</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 legales">
+                    <p class="h5 mb-1 ">Legales</p>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/porque-es-importante-leer-los-terminos-y-condiciones-de-una-pagina-en-internet-o-aplicacion">Terminos y condiciones</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none text-left" id="direccion" target="_blank" href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad">Política de Privacidad</a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" id="direccion" target="_blank" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor">Defensa del Consumidor</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 mindhubFooter">
+                    <p class="h5 mb-3 ">MindHub Cohorte-32</p>
+                    <p class="text-white">Grupo 4</p>
+                </div>
+                <div class="col-xs-12  mb-0 pt-3">
+                    <p class="text-white text-center">Devs: Alessandro.L - Chaban.D - Condori.A - De Luca.J - Garay.S - Giusti.I - Teruel.J </p>
+                </div>
+            
+            </div>
+            <div class="col-12  col-lg-1 p-2 d-flex justify-content-center "><a href="#"><img  class="flechaInicio" src="./assets/imgFooter/flechaSbg1.png" alt="flecha"></a></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./js/productos.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activeCSS{
+    color: white !important;
+}
+.navText{
+    color: lightgray !important ;
+}
+.logo{
+    max-height: 5vh;
+}
+.carro{
+    height: 2vh;
+}
+li>a:hover{
+    background-color: darkslategray;
+}
+
+/* Media de navbar */
+@media (min-width: 992px) {
+    .borderLiNav{
+        border: none !important;
+    }
+}
