@@ -2,7 +2,7 @@
 ![Imagen del proyecto](https://user-images.githubusercontent.com/110680187/198364671-d712fd47-5227-49eb-9065-502fa2cd2722.png?raw=true)
 
 ## Ejemplo en vivo
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
+- [https://mindy-petshop-rho.vercel.app/](https://mindy-petshop-rho.vercel.app/)
 - [https://apipetshop.herokuapp.com/api/articulos](https://apipetshop.herokuapp.com/api/articulos)
 
 ## Descripción 📑
