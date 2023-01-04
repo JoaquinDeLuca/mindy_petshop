@@ -176,22 +176,146 @@ const mostrarProductosCorrespondientes = (dataApi) => {
     }
 }
 
-/* Funcion que obtiene los datos de la API mindy-petshop */
-const obtenerDatosApi = async () => {
-    let respuesta = await fetch("https://apipetshop.herokuapp.com/api/articulos");
-    let respuestaJson = await respuesta.json();
-    let dataApi =  respuestaJson.response;
-    return dataApi
-}
 
-const mostrarProductos = async () => {
-    try {
-        let dataApi = await obtenerDatosApi();
-        mostrarProductosCorrespondientes(dataApi);
-    }
-    catch (error) {
-        console.log(error)
-    }
+let productos = [
+    {
+        descripcion: "Juguete Dental Mordillo Con Soga Perros Cachorros Trixie",
+        imagen:"https://i.postimg.cc/g0KdsKPN/Juguete-Dentale.jpg",
+        nombre: "Juguete Dental Mordillo Con Soga",
+        precio:"250",
+        stock: "5",
+        tipo: "Juguete",
+        unidades: 2,
+        _v:"0",
+        _id: "1"
+    },
+    {
+        descripcion: "Antiparasitario interno en suspensión oral.",
+        imagen: "https://i.postimg.cc/mgXW1nLN/Antipulgas-Simparica-de-2-5-a-5-Kg-Para-Perro.png",
+        nombre: "Antipulgas Simparica de 2.5 a 5gr Para Perro",
+        precio: "800",
+        stock: "2",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "2"
+    },
+    {
+        descripcion: "Enjuague Bucal",
+        imagen: "https://i.postimg.cc/3NJZGtJm/Enjuague-Bucal-Kanu-En-Espuma-Menta-Para-Perro.webp",
+        nombre: "Enjuague Bucal Kanu, menta Para Perro",
+        precio: "500",
+        stock: "20",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "3"
+    },
+    {
+        descripcion: "gato",
+        imagen: "https://i.postimg.cc/XqpC3mYH/gato.webp",
+        nombre: "Antipulgas Advantage 4 a 8 gr para Gato",
+        precio: "990",
+        stock: "10",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "4"
+    },
+    {
+        descripcion: "perro",
+        imagen: "https://i.postimg.cc/cLMcLKSV/perro.png",
+        nombre: "Bionupet Articulaciones 30 Tab Para Perro",
+        precio: "850",
+        stock: "12",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "5"
+    },
+    {
+        descripcion: "Solo para gato",
+        imagen: "https://i.postimg.cc/VNh0f1dx/gato2.webp",
+        nombre: "Broadline 25 a 75 gr Para Gato",
+        precio: "400",
+        stock: "2",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "6"
+    },
+    {
+        descripcion: "perrooo",
+        imagen: "https://i.postimg.cc/hvsSGb2X/perro2.png",
+        nombre: "Endog 1000 MG Para Perro",
+        precio: "1000",
+        stock: "8",
+        tipo: "Medicamento",
+        unidades: 1,
+        __v: "0",
+        _id: "7"
+    },
+    {
+        descripcion: "Pelota",
+        imagen: "https://i.postimg.cc/T1Yzt8cP/pelota.webp",
+        nombre: "Juguete Pelota Basket Perros,Cachorros",
+        precio: "1000",
+        stock: "16",
+        tipo: "Juguete",
+        unidades: 1,
+        __v: "0",
+        _id: "8"
+    },
+    {
+        descripcion: "Juguete Mordillo manija perro Trixie",
+        imagen: "https://i.postimg.cc/VNmDqqgf/Juguete-Perro-Trixie.webp",
+        nombre: "Juguete Mordillo manija perro Trixie",
+        precio: "800",
+        stock: "2",
+        tipo: "Juguete",
+        unidades: 1,
+        __v: "0",
+        _id: "9"
+    },
+    {
+        descripcion: "Juguete Cuerda De Juego 31 Perros Cachorros Mascotas Trixie",
+        imagen: "https://i.postimg.cc/mkCm38vr/Juguete-Cuerda.jpg",
+        nombre: "Juguete Cuerda",
+        precio: "300",
+        stock: "8",
+        tipo: "Juguete",
+        unidades: 1,
+        __v: "0",
+        _id: "10"
+    },
+    {
+        descripcion: "Hueso para perro",
+        imagen: "https://i.postimg.cc/7YNVxGDj/hueso.jpg",
+        nombre: "Hueso 25cm",
+        precio: "500",
+        stock: "2",
+        tipo: "Juguete",
+        unidades: 1,
+        __v: "0",
+        _id: "11"
+    },
+    {
+        descripcion: "Juguete Frisbee 15cm Flexible Disco Perros Cachorros Trixie",
+        imagen: "https://i.postimg.cc/wjy7wZWF/Juguete-Frisbee.jpg",
+        nombre: "Juguete Frisbee 15cm",
+        precio: "1000",
+        stock: "26",
+        tipo: "Juguete",
+        unidades: 1,
+        __v: "0",
+        _id: "12"
+    },
+]
+
+
+const mostrarProductos = () => {
+    let dataApi = productos;
+    mostrarProductosCorrespondientes(dataApi);
 }
 
 mostrarProductos();
